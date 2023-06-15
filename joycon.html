@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Document</title>
     <style>
         .upp{
@@ -21,6 +22,10 @@
             position: relative;
             font-size: 18px;
             padding:16px;
+        }
+        .informasi{
+            margin-top: 400px;
+            float: right;
         }
         @keyframes mymove {
         from {bottom: 0px;}
@@ -46,10 +51,13 @@
     </div>
 
     
-    <button id="up" onclick="myFunction()">Atas</button>
-    <button id="down" onclick="myFunction2()">Bawah</button>
-    <button id="left" onclick="myFunction3()">Kiri</button>
-    <button id="right" onclick="myFunction4()">kanan</button>
+    <button id="up" onclick="myFunction()" class="btn btn-success">Atas</button>
+    <button id="down" onclick="myFunction2()" class="btn btn-success">Bawah</button>
+    <button id="left" onclick="myFunction3()" class="btn btn-success">Kiri</button>
+    <button id="right" onclick="myFunction4()" class="btn btn-success">kanan</button>
+
+    <button id="animasi" onclick="myFunction5()">Kiri</button>
+    <button id="animasi2" onclick="myFunction6()">kanan</button>
     
 
     <script>
@@ -67,8 +75,19 @@
         function myFunction4() {
             atas.style.animation = "mymove4 1s";
         }
+        
+
+        function myFunction5() {
+            atas.style.animation = "mymove5 1s";
+        }
+        function myFunction6() {
+            atas.style.animation = "mymove6 1s";
+        }
     </script>
-
-
+<div class="informasi">
+<p>NPM : 21430073</p>
+<p>Nama : Ardy Widjaya</p>
+<p>Link Github : https://github.com/Ardy-Dy/uas.git</p>
+</div>
 </body>
 </html>
